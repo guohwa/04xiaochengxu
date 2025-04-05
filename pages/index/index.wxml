@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="header">
+    <view class="title">阴历-阳历</view>
+    <view class="subtitle">天干、地支，一键计算。</view>
+  </view>
+  <view class="content-box">
+    <view class="description">
+      <text>通过精准的出生信息，我们将为您提供详细的八字分析，帮助您了解自己的命理特点。</text>
+    </view>
+  </view>
+  <button class="primary-btn" bindtap="navigateToBirthdateInput">开始计算</button>
+</view>

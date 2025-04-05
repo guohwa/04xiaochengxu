@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="header">
+    <view class="title">请填写出生信息</view>
+    <view class="subtitle">请准确输入您的阳历出生日期和出生时辰</view>
+  </view>
+  
+  <view class="form-content">
+    <view class="form-item">
+      <text>出生日期 (阳历)：</text>
+      <picker mode="date" value="{{solarDate}}" start="1900-01-01" end="{{currentDate}}" bindchange="bindDateChange">
+        <view class="picker">{{solarDate || '请选择日期'}}</view>
+      </picker>
+    </view>
+
+    <view class="form-item">
+      <text>出生时辰：</text>
+      <picker value="{{selectedHour}}" range="{{hours}}" bindchange="bindHourChange">
+        <view class="picker">{{selectedHour || '请选择时辰'}}</view>
+      </picker>
+    </view>
+  </view>
+
+  <button bindtap="convertToLunar" class="submit-btn">计算</button>
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="header">
+    <text class="title">您的农历生辰</text>
+    <text class="subtitle">根据您提供的信息计算得出</text>
+  </view>
+
+  <view class="result-content">
+    <view class="result-box">
+      <text class="result-label">农历日期</text>
+      <text class="result-value">{{lunarDate}}</text>
+    </view>
+  </view>
+
+  <view class="button-group">
+    <button class="btn btn-back" bindtap="goBack">返回修改</button>
+    <button class="btn btn-home" bindtap="goHome">返回首页</button>
+  </view>
+</view>

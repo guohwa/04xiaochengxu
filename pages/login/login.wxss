@@ -1,0 +1,9 @@
+.login-container {
+  padding: 40rpx;
+}
+
+.btn-login {
+  margin-top: 40rpx;
+  background: #07c160;
+  color: white;
+}
