@@ -1,0 +1,37 @@
+{
+  "name": "mini-program",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run dev:mp-weixin",
+    "build": "npm run build:mp-weixin",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:mp-weixin": "uni build -p mp-weixin"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@dcloudio/vue-cli-plugin-uni": "^3.0.0",
+    "@dcloudio/types": "^3.3.3",
+    "@vue/cli-service": "^5.0.8",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2",
+    "uni-helper-vite": "^0.0.6",
+    "unplugin-auto-import": "^0.16.6",
+    "vite": "^4.5.0",
+    "vite-plugin-uni": "^0.0.6"
+  },
+  "browserslist": [
+    "Android >= 4",
+    "ios >= 8"
+  ],
+  "uni-app": {
+    "scripts": {
+      "mp-weixin": {
+        "title": "微信小程序"
+      }
+    }
+  }
+}
